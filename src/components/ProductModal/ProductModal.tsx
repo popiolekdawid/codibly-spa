@@ -22,7 +22,8 @@ const ModalContainer = styled.div`
   transform: translate(-50%, -50%);
   background-color: white;
   padding: 30px;
-  boarder: 2px;
+  border: 10px solid ${({ product }: Props) => product.color};
+  border-radius: 10px;
 `;
 
 const ModalTitle = styled.h2`
@@ -33,7 +34,7 @@ const ProductModal: React.FC<Props> = ({ product, isOpen, handleCloseModal }) =>
   if (!isOpen) return null;
 
   return (
-    <ModalContainer>
+    <ModalContainer product={product} isOpen={isOpen} handleCloseModal={handleCloseModal}>
       <ModalTitle>{product.name}</ModalTitle>
       <p>ID: {product.id}</p>
       <p>Year: {product.year}</p>
