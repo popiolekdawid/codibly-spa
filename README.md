@@ -1,8 +1,12 @@
 # codibly-spa
 
-Dear Candidate, to go further with the recruitment process we would like to ask you to complete the task and answer the 3 questions. You will find all details below :) There is no deadline scheduled, however, there is a limited number of free slots for interns and we will close the recruitment process as soon as we will find them, so... hurry up :)
+This is my solution to the task.
+Dependencies I've used are axios and styled-components.
 
-Fingers crossed!
+Live version: https://popiolekdawid.github.io/codibly-spa/
+
+
+
 
 Task description:
 
