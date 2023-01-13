@@ -10,7 +10,8 @@ const FilterInput: React.FC<Props> = ({ handleFilter }) => {
   const [filter, setFilter] = useState<string>('');
 
   const handleFilterChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    const inputValue = event.target.value;
+    let exp: RegExp = /[^0-9]/;
+    const inputValue = event.target.value.replace(exp, "");
     setFilter(inputValue);
     handleFilter(inputValue);
   };
